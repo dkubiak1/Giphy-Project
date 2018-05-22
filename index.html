@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giphy Populator</title>
+    <link rel="stylesheet" href="assets/css/style.css">  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+        <div id="buttons-view"></div>
+      <div class="fruit-con">  
+        <form id="fruit-form">
+                <label for="fruit-input">Add a Fruit</label>
+                <input type="text" id="fruit-input"><br>
+          
+                <input id="add-fruit" type="submit" value="Add a Fruit">
+              </form>
+        
+        <div id="select">Select # of Results
+            <select name="limit" id="limit">
+                <option class="limit" value="1">1</option>
+                <option class="limit" value="5">5</option>
+                <option class="limit" value="10">10</option>
+            </select>
+        </div>
+      </div>  
+        <div class="container">
+        <div id="images"></div>
+        </div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

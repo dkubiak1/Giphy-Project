@@ -1,0 +1,89 @@
+body {
+
+    background-image: url(../images/space.jpg);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#select, #fruit-form {
+    color: white;
+    width: 200%;
+}
+
+#buttons-view {
+    display: inline-block;
+    margin: auto;
+}
+
+.fruit {
+    background: green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    animation-name: colorshift;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    width: 150px;
+    height: 100px;
+    font-size: 24px;
+}
+
+@keyframes colorshift {
+    0% {background: green;}
+    25% {background: red;}
+    50% {background: yellow;}
+    75% {background: orange;}
+    100% {background: lightgreen;}
+
+}
+
+img:hover {
+    color: blue;
+    width: 120%;
+}
+
+.container {
+    width: 75%;
+    max-width: 100%;
+    margin-left: 330px;
+}
+
+#images {
+    display: inline-block;
+    /*display: grid;*/
+    color: white;
+   /*column-count: auto;*/
+    column-fill: auto;
+    /*grid-auto-flow: row;
+    grid-template-columns: auto auto auto;*/
+}
+
+.fruit:hover {
+    
+    animation: shake 0.5s; 
+    animation-iteration-count: infinite; 
+    color: blue;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.fruit-con {
+
+    width: 500px;;
+}
