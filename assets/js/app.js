@@ -53,22 +53,22 @@ $.ajax({
     for (i = 0; i < results.length; i++) {
 
   
-    var imgUrl = results[i].images.fixed_height.url
-    var imgUrlStill = results[i].images.fixed_height_still.url
+    var imgUrl = results[i].images.fixed_height.url;
+    var imgUrlStill = results[i].images.fixed_height_still.url;
     var image = $("<img>")
     
     image.attr("src", imgUrlStill);
-    image.attr("data-state", "still")
+    image.attr("data-state", "still");
     image.attr("index", i);
-    image.attr("data-still", imgUrlStill)
-    image.attr("data-animate", imgUrl)
+    image.attr("data-still", imgUrlStill);
+    image.attr("data-animate", imgUrl);
     
 
     var rating = results[i].rating;
-    var p = $("<p>").text("Rating: " + rating)
+    var p = $("<p>").text("Rating: " + rating);
        
-        $("#images").append(image);
-        $("#images").append(p);
+    $("#images").append(image);
+    $("#images").append(p);
     
         }
 
